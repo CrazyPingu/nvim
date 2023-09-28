@@ -12,17 +12,15 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({{import = "detu.plugins"}})
-
--- require("lazy").setup({{import = "detu.plugins"}, {import = "detu.plugins.lsp"}}, {
---   install = {
---     colorscheme = { "nightfly" },
---   },
---   checker = {
---     enabled = true,
---     notify = false,
---   },
---   change_detection = {
---     notify = false,
---   },
--- })
+require("lazy").setup({{import = "detu.plugins"}, {import = "detu.plugins.lsp"}}, {
+  install = {
+    colorscheme = { "nightfly" },
+  },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
