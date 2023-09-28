@@ -12,17 +12,7 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({{import = "detu.plugins"}, {
-  "catppuccin/nvim",
-  name = "catppuccin",
-  priority = 1000,
-  config = function()
-    require("catppuccin").setup { background = { dark = "mocha" } }
-
-    -- Set theme
-    vim.cmd.colorscheme "catppuccin-mocha"
-  end,
-}})
+require("lazy").setup({{import = "detu.plugins"}})
 
 -- require("lazy").setup({{import = "detu.plugins"}, {import = "detu.plugins.lsp"}}, {
 --   install = {
