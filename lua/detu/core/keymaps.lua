@@ -10,7 +10,10 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+-- keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+keymap.set("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" }) -- quit
+keymap.set("n", "<leader>s", "<cmd>w<CR>", { desc = "Save" }) -- Save
 
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
