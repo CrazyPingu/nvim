@@ -22,6 +22,9 @@ keymap.set("n", "<leader>s", "<cmd>w<CR>", { desc = "Save" }) -- Save
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
+-- Add LazyGit shortcut
+keymap.set("n", "<leader>g", "<cmd>LazyGit<CR>", { desc = "Open Git menager" })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
