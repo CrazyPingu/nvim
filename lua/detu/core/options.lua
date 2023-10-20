@@ -1,6 +1,6 @@
 local opt = vim.opt -- for conciseness
 
-vim.cmd([[nmap / gcc]]) -- use gcc to comment out a line
+-- vim.cmd([[nmap / gcc]]) -- use gcc to comment out a line
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
